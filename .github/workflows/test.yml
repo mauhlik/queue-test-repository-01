@@ -3,9 +3,16 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
+  test1:
     runs-on: ubuntu-24.04
     environment: default
+    steps:
+      - name: Echo
+        run: |
+          echo "Just print"
+  test2:
+    runs-on: ubuntu-24.04
+    environment: queue-cd-123
     steps:
       - name: Echo
         run: |
