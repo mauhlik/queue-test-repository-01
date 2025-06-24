@@ -1,0 +1,5 @@
+rules:
+  - pattern: queue-cd-*
+    name: cd
+  - pattern: default
+    name: default-queue
